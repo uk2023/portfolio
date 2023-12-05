@@ -1,3 +1,50 @@
 .contact {
   flex-direction: column;
+  margin-top: 25px;
+}
+
+/* Contact.css */
+
+.section {
+  margin-top: 3em;
+}
+
+.section__title {
+  
+  margin-bottom: 30px;
+  color: var(--clr-primary);
+}
+
+.contact {
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-bg);
+}
+
+/* Add the following styles for email button */
+.contact a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn--outline {
+  background-color: blue;
+  color: aliceblue;
+  padding: 10px 30px;
+}
+.contact .btn {
+  background-color: var(--clr-primary);
+  color: var(--clr-bg);
+  padding: 0.8em 1.5em;
+  margin-top: 1.5em;
+  border: 2px solid var(--clr-primary);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact .btn:hover {
+  background-color: transparent;
+  color: var(--clr-primary);
 }

@@ -5,3 +5,9 @@
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 2em;
 }
+
+.section__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

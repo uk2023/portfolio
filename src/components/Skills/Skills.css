@@ -9,4 +9,14 @@
 
 .skills__list-item {
   margin: 0.5em;
+  padding: 0.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  font-size: 0.9rem;
+}
+
+.skills__list-item:hover {
+  transform: scale(1.05);
 }

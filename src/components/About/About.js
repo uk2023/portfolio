@@ -1,16 +1,18 @@
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import { about } from '../../portfolio'
-import './About.css'
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { about } from '../../portfolio';
+import './About.css';
+import IMG1 from '../../assets/1.png';
+import RESUME_PDF from '../../assets/Resume-Ujjwal-Kumar.pdf'; // Replace with the actual path
 
 const About = () => {
-  const { name, role, description, resume, social } = about
+  const { name, role, description, social } = about;
 
   return (
     <div className='about center'>
       {name && (
         <h1>
-          Hi, I am <span className='about__name'>{name}.</span>
+          Hi, I am <span className='about__name'>{name}</span>
+          <img src={IMG1} alt="LOGO" className="about__image" />
         </h1>
       )}
 
@@ -18,8 +20,8 @@ const About = () => {
       <p className='about__desc'>{description && description}</p>
 
       <div className='about__contact center'>
-        {resume && (
-          <a href={resume}>
+        {RESUME_PDF && (
+          <a href={RESUME_PDF} download>
             <span type='button' className='btn btn--outline'>
               Resume
             </span>
@@ -34,7 +36,7 @@ const About = () => {
                 aria-label='github'
                 className='link link--icon'
               >
-                <GitHubIcon />
+                <FaGithub />
               </a>
             )}
 
@@ -44,14 +46,14 @@ const About = () => {
                 aria-label='linkedin'
                 className='link link--icon'
               >
-                <LinkedInIcon />
+                <FaLinkedin />
               </a>
             )}
           </>
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

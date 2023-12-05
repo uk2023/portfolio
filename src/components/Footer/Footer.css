@@ -1,18 +1,30 @@
+/* Footer.css */
+
 .footer {
-  padding: 3em 0;
-  margin-top: 4em;
+  background-color: var(--clr-bg);
+  padding: 1.5em 0;
   text-align: center;
 }
 
-.footer__link {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--clr-fg);
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
 }
 
-@media (max-width: 600px) {
-  .footer {
-    padding: 2em;
-    margin-top: 3em;
-  }
+.footer__social {
+  font-size: 80%;
+}
+
+.footer__link {
+  color: var(--clr-primary);
+  font-size: 1.5em;
+  margin: 0 0.5em;
+}
+
+.footer__text {
+  color: var(--clr-fg);
+  font-size: 0.9em;
+  margin-top: 0.5em;
 }

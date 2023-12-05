@@ -1,7 +1,7 @@
-import uniqid from 'uniqid'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LaunchIcon from '@material-ui/icons/Launch'
-import './ProjectContainer.css'
+import React from 'react';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import uniqid from 'uniqid';
+import './ProjectContainer.css';
 
 const ProjectContainer = ({ project }) => (
   <div className='project'>
@@ -21,23 +21,27 @@ const ProjectContainer = ({ project }) => (
     {project.sourceCode && (
       <a
         href={project.sourceCode}
+        target='_blank'
+        rel='noopener noreferrer'
         aria-label='source code'
         className='link link--icon'
       >
-        <GitHubIcon />
+        <FaGithub />
       </a>
     )}
 
     {project.livePreview && (
       <a
         href={project.livePreview}
+        target='_blank'
+        rel='noopener noreferrer'
         aria-label='live preview'
         className='link link--icon'
       >
-        <LaunchIcon />
+        <FaExternalLinkAlt />
       </a>
     )}
   </div>
-)
+);
 
-export default ProjectContainer
+export default ProjectContainer;

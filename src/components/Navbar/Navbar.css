@@ -1,39 +1,55 @@
+/* Navbar.css */
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav {
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar.css */
+
+/* Add styles for dark mode */
+.nav.dark {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+
+/* Add styles for light mode */
+.nav.light {
+  background-color: #f4f4f4; /* Light background color */
+  color: #333; /* Dark text color */
+}
+
 .nav__list {
-  margin-right: 1.5em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
 }
+
 .nav__list-item {
-  margin-left: 1.5em;
+  margin-right: 1rem;
 }
 
-.app .nav__hamburger {
-  display: none;
+.link--nav {
+  text-decoration: none;
+  color: inherit;
 }
 
-.nav__theme {
-  margin-top: 0.4em;
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333; /* Default icon color */
 }
 
-@media (max-width: 600px) {
-  .nav__list {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-
-  .nav__list-item {
-    margin: 0.5em 0;
-  }
-
-  .app .nav__hamburger {
-    display: flex;
-    z-index: 2;
-    margin-left: 0.8em;
-  }
+.btn--icon:hover {
+  opacity: 0.8;
 }
+
