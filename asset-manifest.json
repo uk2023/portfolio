@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.009776ef.css",
+    "main.css": "/portfolio/static/css/main.70a6a9ad.css",
     "main.js": "/portfolio/static/js/main.a53693d9.js",
     "static/js/787.a7e43749.chunk.js": "/portfolio/static/js/787.a7e43749.chunk.js",
     "static/media/1.png": "/portfolio/static/media/1.ed24d48b704b333d820c.png",
     "static/media/Resume-Ujjwal-Kumar.pdf": "/portfolio/static/media/Resume-Ujjwal-Kumar.3c7b71278fa5f2c8e613.pdf",
     "index.html": "/portfolio/index.html",
-    "main.009776ef.css.map": "/portfolio/static/css/main.009776ef.css.map",
+    "main.70a6a9ad.css.map": "/portfolio/static/css/main.70a6a9ad.css.map",
     "main.a53693d9.js.map": "/portfolio/static/js/main.a53693d9.js.map",
     "787.a7e43749.chunk.js.map": "/portfolio/static/js/787.a7e43749.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.009776ef.css",
+    "static/css/main.70a6a9ad.css",
     "static/js/main.a53693d9.js"
   ]
 }
